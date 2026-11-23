@@ -16,7 +16,35 @@ class CustomCardTipo1 extends StatelessWidget {
             leading: Icon(Icons.add_road, color: AppTheme.primary,),
             title: Text('Aqui va el titulo del card'),
             subtitle: Text('Incididunt sint dolore deserunt ea.'),
+          ),
+
+
+        Padding(
+          padding: const EdgeInsetsGeometry.only(right: 20.0),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.end,
+            children: [
+              TextButton(
+                onPressed:(){
+                },
+                style: TextButton.styleFrom(
+                  
+                ),
+                child: Text('Ok')
+              ),
+
+              TextButton(
+                onPressed:(){
+
+                },
+                style: TextButton.styleFrom(
+                  //backgroundColor: Colors.red
+                ),
+                child: Text('Cancelar')
+              ),
+            ],
           )
+        )
         ],
       ),
     );
