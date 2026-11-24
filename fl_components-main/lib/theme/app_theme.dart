@@ -13,7 +13,10 @@ class AppTheme {
         ),
 
         textButtonTheme: TextButtonThemeData(
-          style: TextButton.styleFrom(backgroundColor: Colors.green.withValues(alpha: 0.25))
+          style: TextButton.styleFrom( 
+            backgroundColor: Colors.green.withValues(alpha: 0.25),
+            foregroundColor: primary
+            )
         )
       );
 }
