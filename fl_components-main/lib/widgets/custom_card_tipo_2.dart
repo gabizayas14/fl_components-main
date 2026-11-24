@@ -10,7 +10,13 @@ class CustomCardTipo2 extends StatelessWidget {
       elevation: 10,
       child: Column(
         children: [
-          Image(image: NetworkImage('https://content.elmueble.com/medio/2023/03/29/chihuahua-de-color-blanco-y-tostado_4093fa98_230329114730_1000x1500.jpg')
+          FadeInImage(
+            image: NetworkImage('https://content.elmueble.com/medio/2023/03/29/chihuahua-de-color-blanco-y-tostado_4093fa98_230329114730_1000x1500.jpg'),
+            placeholder: AssetImage('assets/jar-loading.gif'),
+            width: double.infinity,
+            height: 900,
+            fit: BoxFit.cover,
+            fadeInDuration: Duration(milliseconds: 1000),
           )
         ],
       ),
